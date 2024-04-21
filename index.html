@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic responsive Webpage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .content h1 {
+      color: #252525;
+      font-size: 4rem;
+      font-weight: 800;
+      margin-top: 0;
+    }
+
+    .content p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: rgba(37, 37, 37, 0.8);
+    }
+
+    .content button {
+      padding: 18px 48px;
+      border: none;
+      border-radius: 16px;
+      background: #252525;
+      color: #FFFFFF;
+      margin-bottom: 4%;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1%;
+    }
+
+    .image {
+      width: calc(25% - 1%);
+      margin-bottom: 1%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .image {
+        width: calc(33.33% - 1%);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .image {
+        width: calc(50% - 1%);
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      .image {
+        width: calc(100% - 1%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Discover the beauty around the world</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget diam.</p>
+    <button>Explore</button>
+  </div>
+  <section class="image-row">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a96713defff391f9441a09c6c76d8fd4349b059c1a08b297dd0e715e0c59d43?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 1" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/29f068c169609b924528ba7960a04c0740becb7d7dfda0ec1749fe3fe988b585?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 2" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8e227832bffa87d0dff2107077b3cebcb7758077c678e2e60bc13690e35b9052?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 3" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4e12494b3db35ad3d2bbc70650b580c695067145c90079f3d24098b389a181e?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 4" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e37a056ab5c330d7f1b931ff57d5001b1e5157ccbcac5420d73f2915a1d7a89?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 5" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5e2c41bef0e928714d8d265ae95b504fbd3d8a5ead11dcfc83979aa90b159a03?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 6" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d893a9f122c1cdbf311b79e92b3e7ec2f98547766b574bf5e748e16f33c9e7e1?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 7" class="image">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c9dedccaa4b803bea42cd3ec5a54f2ce7462992ecd37bb8da7b7095fd5d2ae7?apiKey=7c41f4e29a384101aefb813e980945b0" alt="Image 8" class="image">
+  </section>
+</body>
+</html>
